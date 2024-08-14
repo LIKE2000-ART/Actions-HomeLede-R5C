@@ -37,10 +37,11 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        sudo apt-get -qq update && sudo apt-get -qq upgrade
+        sudo apt-get -qq update && sudo apt-get -qq full-upgrade
         sudo apt-get -qq install $(cat $DEPENDENCIES)
         sudo apt-get -qq autoremove --purge
         sudo apt-get -qq clean
+        sudo pip3 install pylibfdt
         sudo timedatectl set-timezone "$TZ"
 
     - name: Maximize build disk space
