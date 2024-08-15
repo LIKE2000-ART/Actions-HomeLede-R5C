@@ -95,7 +95,9 @@ jobs:
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         if [ -s DEVICE_NAME ]; then
          DEVICE_NAME=$(cat DEVICE_NAME | sed 's/-/_/g')
-         echo "DEVICE_NAME=${DEVICE_NAME}" >> $GITHUB_ENV
+         echo "DEVICE_NAME<<EOF" >> $GITHUB_ENV
+         echo "$DEVICE_NAME" >> $GITHUB_ENV
+         echo "EOF" >> $GITHUB_ENV
         fi
         echo "FILE_DATE=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
 
