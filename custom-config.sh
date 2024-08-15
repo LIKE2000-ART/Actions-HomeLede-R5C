@@ -9,7 +9,6 @@
 echo 'CONFIG_TARGET_rockchip=y' >> $BUILDROOT/.config
 echo 'CONFIG_TARGET_rockchip_armv8=y' >> $BUILDROOT/.config
 echo 'CONFIG_TARGET_MULTI_PROFILE=y' >> $BUILDROOT/.config
-echo 'CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s=y' >> $BUILDROOT/.config
 echo 'CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5c=y' >> $BUILDROOT/.config
 echo 'CONFIG_TARGET_ROOTFS_TARGZ=y' >> $BUILDROOT/.config
 echo 'CONFIG_TARGET_ROOTFS_EXT4FS=y' >> $BUILDROOT/.config
