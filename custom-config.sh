@@ -39,5 +39,6 @@ echo 'CONFIG_PACKAGE_luci-app-aria2=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_luci-app-samba4=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_luci-app-homeconnect=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_luci-app-homeredirect=y' >> $BUILDROOT/.config
+echo 'CONFIG_PACKAGE_luci-app-zerotier=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_kmod-tun=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_luci-app-strongswanInDocker=y' >> $BUILDROOT/.config
