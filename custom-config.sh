@@ -42,3 +42,4 @@ echo 'CONFIG_PACKAGE_luci-app-homeredirect=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_luci-app-zerotier=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_kmod-tun=y' >> $BUILDROOT/.config
 echo 'CONFIG_PACKAGE_luci-app-strongswanInDocker=y' >> $BUILDROOT/.config
+echo 'CONFIG_PACKAGE_luci-app-ipsec-vpnserver-manyusers=y' >> $BUILDROOT/.config
