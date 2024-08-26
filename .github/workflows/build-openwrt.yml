@@ -77,7 +77,7 @@ jobs:
         chmod +x custom-*.sh
         $CUSTOM_FEEDS_SH
         pushd $BUILDROOT
-        ./prepareCompile.sh
+        # ./prepareCompile.sh
         popd
         $CUSTOM_PACKAGES_SH
         $CUSTOM_CONFIG_SH
