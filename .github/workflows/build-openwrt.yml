@@ -26,6 +26,7 @@ env:
   CUSTOM_FEEDS_SH: ${{ github.workspace }}/custom-feeds.sh
   CUSTOM_PACKAGES_SH: ${{ github.workspace }}/custom-packages.sh
   CUSTOM_CONFIG_SH: ${{ github.workspace }}/custom-config.sh
+  PERPARE_FEED_SH: ${{ github.workspace }}/PrepareFeed.sh
   TZ: Asia/Shanghai
 
 jobs:
@@ -76,8 +77,9 @@ jobs:
       run: |
         chmod +x custom-*.sh
         $CUSTOM_FEEDS_SH
-        $BUILDROOT/scripts/feeds update -a && $BUILDROOT/scripts/feeds install -a
-        # ./prepareCompile.sh
+        $BUILDROOT/scripts/feeds update -a 
+        $PERPARE_FEED_SH
+        $BUILDROOT/scripts/feeds install -a
         popd
         $CUSTOM_PACKAGES_SH
         $CUSTOM_CONFIG_SH
