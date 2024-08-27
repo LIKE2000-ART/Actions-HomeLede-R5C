@@ -76,7 +76,7 @@ jobs:
       run: |
         chmod +x custom-*.sh
         $CUSTOM_FEEDS_SH
-        pushd $BUILDROOT
+        $BUILDROOT/scripts/feeds update -a && $BUILDROOT/scripts/feeds install -a
         # ./prepareCompile.sh
         popd
         $CUSTOM_PACKAGES_SH
