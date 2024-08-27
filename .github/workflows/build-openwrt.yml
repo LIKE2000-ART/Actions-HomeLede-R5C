@@ -26,7 +26,7 @@ env:
   CUSTOM_FEEDS_SH: ${{ github.workspace }}/custom-feeds.sh
   CUSTOM_PACKAGES_SH: ${{ github.workspace }}/custom-packages.sh
   CUSTOM_CONFIG_SH: ${{ github.workspace }}/custom-config.sh
-  PERPARE_FEED_SH: ${{ github.workspace }}/PrepareFeed.sh
+  PERPARE_FEED_SH: ${{ github.workspace }}/custom-prepare.sh
   TZ: Asia/Shanghai
 
 jobs:
